@@ -14,7 +14,7 @@ const Graph = () => {
         async function getDetails() {
             try {
                 // Fetch expense data
-                const expenseResponse = await fetch("http://localhost:8090/expense/history");
+                const expenseResponse = await fetch("http://backend:8090/expense/history");
                 if (!expenseResponse.ok) throw new Error('Error fetching expense data');
                 const expenseData = await expenseResponse.json();
 

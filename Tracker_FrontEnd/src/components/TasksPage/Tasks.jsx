@@ -18,7 +18,7 @@ const Tasks = () => {
 
     const fetchTransactionCount = async () => {
         try {
-            const response = await fetch('http://localhost:8090/budget/all');
+            const response = await fetch('http://backend:8090/budget/all');
             if (!response.ok) throw new Error('Network response was not ok');
             const fetchedData = await response.json();
             console.log('Fetched data:', fetchedData);

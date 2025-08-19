@@ -23,7 +23,7 @@ const AddTransaction = () => {
     useEffect(() => {
         const fetchTransactionCount = async () => {
             try {
-                const response = await fetch('http://localhost:8090/expense/history');
+                const response = await fetch('http://backend:8090/expense/history');
                 if (!response.ok) throw new Error('Network response was not ok');
                 const data = await response.json();
                 setTransactionCount(data.length);

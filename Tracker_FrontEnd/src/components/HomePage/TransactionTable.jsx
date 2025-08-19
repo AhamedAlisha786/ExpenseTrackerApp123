@@ -10,7 +10,7 @@ import { Chip } from '@mui/material';
 
 async function fetchExpenseHistory() {
   try {
-    const response = await fetch('http://localhost:8090/expense/history');
+    const response = await fetch('http://backend:8090/expense/history');
     
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
